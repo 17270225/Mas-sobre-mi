@@ -1,0 +1,50 @@
+
+
+.container{
+    background-color: rgb(109, 226, 226);
+    margin: 10px;
+}
+.container.fluid{
+    background-color: crimson;
+}
+img {
+  width: 500px; /* Ancho fijo */
+  height: 500px; /* Alto fijo */
+ /* border-radius: 100px; /* Bordes redondeados */
+/*  border: 1px solid #3498db; /* Borde con color */
+}
+
+section video{
+  width: 287px;
+  height: 200px;
+  object-fit: cover;
+}
+
+body {
+  background-color: #6412c2;
+}
+footer p {
+  color: cyan;
+}
+
+
+/*esta seccion del codigo da el efecto la separacion de la card y el tamaño de las imagenes*/
+section {
+  display: flex;
+  width: 287px;
+  height: 200px;
+}
+section img{
+  width: 0px;
+  height: 200px;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: .5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120$);
+}
